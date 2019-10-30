@@ -4,7 +4,6 @@ import random
 import re
 import sys
 
-# Complete the shortestReach function below.
 def shortestReach(n, edges, s):
     #a node is said to be visited if its outorder vertices are all scanned
     visited=[0 for i in range(n)]
@@ -42,11 +41,6 @@ def shortestReach(n, edges, s):
         elif(i!=s-1 and dist[i]==sys.maxsize):
             lst.append(-1)
     return lst
-
-
-
-
-
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
